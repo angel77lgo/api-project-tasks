@@ -19,7 +19,7 @@ initialize_db(app)
 
 @app.route('/')
 def index():
-    return jsonify(status=up)
+    return jsonify(status="up")
 
 @app.route('/api/task/bulk', methods=['POST'])
 def bulk():
