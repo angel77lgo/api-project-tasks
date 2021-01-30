@@ -1,4 +1,5 @@
 Flask==1.1.2
 flask-mongoengine==1.0.0
 Flask-PyMongo==2.3.0
+gunicorn==20.0.4
 python-dotenv==0.15.0
