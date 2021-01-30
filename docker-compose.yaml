@@ -1,0 +1,19 @@
+version: "3"
+services:
+  app:
+    container_name: task-api
+    image: task-api
+    build: 
+      context: .
+    ports:
+    - "5000:5000"
+    depends_on:
+    - dbmongo
+    env_file: 
+      .env.docker
+  
+  dbmongo:
+    container_name: python-mongo
+    ports:
+    - "27017:27017"
+    image: mongo
