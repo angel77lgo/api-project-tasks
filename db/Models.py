@@ -1,4 +1,4 @@
-from db import db
+from .database import db
 import mongoengine as me
 
 

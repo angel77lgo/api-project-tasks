@@ -1,15 +1,18 @@
 from flask import Flask, request, jsonify, Response
-from db import initialize_db
-from Models import Tasks
+from db.database import initialize_db
+from db.Models import Tasks
 import json
 import re
 from markupsafe import escape
 import RandomTask
+import os
 
 app = Flask(__name__)
+host = os.getenv('MONGO_HOST')
+db_name = os.getenv('DB_NAME')
 
 app.config["MONGODB_SETTINGS"]= {
-    'host':'mongodb://localhost/projects'
+    'host':'mongodb://{}/{}'.format(host, db_name)
 }
 
 initialize_db(app)
@@ -101,4 +104,4 @@ def removeAndDelete(id_):
             return jsonify(message="Interal Error"), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,host='0.0.0.0')
