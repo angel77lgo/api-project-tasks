@@ -15,11 +15,10 @@ def createTask():
 
     # status = True if duration == recorded else False
 
-    task = {
+    return {
         "description": description,
         "duration": duration,
         "recordedTime": round(recorded),
         "status": random.sample([False,True],1)[0]
     }
-    print(task)
-    return task
+   
