@@ -8,7 +8,7 @@ import RandomTask
 import os
 
 app = Flask(__name__)
-host = os.getenv('MONGO_HOST')
+host = os.getenv('DB_HOST')
 db_name = os.getenv('DB_NAME')
 
 app.config["MONGODB_SETTINGS"]= {
