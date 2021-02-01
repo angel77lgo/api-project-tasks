@@ -22,7 +22,7 @@ sudo apt-get install python3
 #### Instalación de Docker y Docker Compose
 
 ##### Windows: 
-Para instalar Docker basta con ir a [Docker For Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows) bajar el instalador y ejecutarlo, con esto Docker estará instalado, en este mismo instalador ya viendo integrado Docker Compose
+Para instalar Docker basta con ir a [Docker For Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows) bajar el instalador y ejecutarlo, con esto Docker estará instalado, en este mismo instalador ya viene integrado Docker Compose
 
 #### Ubuntu:
 

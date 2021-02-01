@@ -10,10 +10,7 @@ def createTask():
     description = ''.join(random.sample(actions,1)) + " " + ''.join(random.sample(l1,1)) + " " + ''.join(random.sample(l2,1))
     duration = random.randint(59,361)
 
-
     recorded = (duration * random.randint(79,101)) / 100
-
-    # status = True if duration == recorded else False
 
     return {
         "description": description,
