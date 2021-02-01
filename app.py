@@ -35,6 +35,8 @@ def bulk():
 @app.route('/api/task', methods=['POST'])
 def addTask():
     body = request.get_json()
+    if body is None:
+        return Response(json.dumps({"message":"Body cannot bet empty"}), mimetype="application/json", status=400)
     try:
         task = Tasks(**body).save()
         
@@ -81,6 +83,8 @@ def removeAndDelete(id_):
 
         if request.method == 'PUT': 
             newtask = request.get_json()
+            if newtask is None:
+                return Response(json.dumps({"message":"Body cannot bet empty"}), mimetype="application/json", status=400)
             print(task)
             try:
                 if task[0]['status']:
