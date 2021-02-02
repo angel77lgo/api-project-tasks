@@ -108,6 +108,12 @@ En la carpeta postman hay 2 archivos:
 
 El primero es los endpoints y el segundo es el ambiente de la API, para importarlos en Postman, debe seleccionar el botón de *import* ubicado en la parte superior izquierda, se deberá abrir un recuadro, seleccionamos *Upload Files* abrirá un explorador de archivos y seleccionamos los 2 anteriores, esto importará automáticamente los endpoints para probar.
 
+En estos archivos hay 2 variables de entorno:
+* base_url_prod
+* base_url_dev
+
+Como su nombre lo indica, una es para probar en desarrollo y otra en producción.
+
 #### Curl
 
 Para probar con Curl, debe insalarse, en Windows solo vaya a este enlace [Curl For Windows](https://winampplugins.co.uk/curl/) descargue el insalador y curl estará instalado.

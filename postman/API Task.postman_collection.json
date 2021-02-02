@@ -11,9 +11,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_url}}/api/task?status=true",
+					"raw": "{{base_url_prod}}/api/task?status=false",
 					"host": [
-						"{{base_url}}"
+						"{{base_url_prod}}"
 					],
 					"path": [
 						"api",
@@ -22,7 +22,7 @@
 					"query": [
 						{
 							"key": "status",
-							"value": "true"
+							"value": "false"
 						}
 					]
 				}
@@ -96,16 +96,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5000/api/task/60159d9e9737ce54bc1d069c",
-					"protocol": "http",
+					"raw": "{{base_url}}/api/task/60187de3710eaa82013c1708",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "5000",
 					"path": [
 						"api",
 						"task",
-						"60159d9e9737ce54bc1d069c"
+						"60187de3710eaa82013c1708"
 					]
 				}
 			},
@@ -117,16 +115,14 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5000/api/task/60159d9e9737ce54bc1d069c",
-					"protocol": "http",
+					"raw": "{{base_url}}/api/task/60187de3710eaa82013c1708",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "5000",
 					"path": [
 						"api",
 						"task",
-						"60159d9e9737ce54bc1d069c"
+						"60187de3710eaa82013c1708"
 					]
 				}
 			},
@@ -138,12 +134,10 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5000/api/task/bulk",
-					"protocol": "http",
+					"raw": "{{base_url}}/api/task/bulk",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "5000",
 					"path": [
 						"api",
 						"task",
